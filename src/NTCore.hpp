@@ -9,38 +9,16 @@
 #include <fstream>
 #include <dirent.h>
 #include <cstring>
+#include "NTCoreTypes.hpp"
 
 namespace NT 
 {
     namespace Core
     {
-        struct Data;
-        struct NetTraffic;
         class NetInterface;
         class NetManager;
     } // namespace: Core
 } // namespace: NT
-
-// ------------------------------------------------------------------------------
-
-struct NT::Core::Data
-{
-    Data()
-        : gb(0), mb(0), kb(0) {}
-    Data(std::size_t bytes);
-
-    std::size_t gb;
-    std::size_t mb;
-    std::size_t kb;
-};
-
-// ------------------------------------------------------------------------------
-
-struct NT::Core::NetTraffic
-{    
-    Data input;
-    Data output;
-};
 
 // ------------------------------------------------------------------------------
 
