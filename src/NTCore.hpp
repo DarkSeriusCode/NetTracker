@@ -10,7 +10,8 @@
 #include <dirent.h>
 #include <cstring>
 
-namespace NT {
+namespace NT 
+{
     namespace Core
     {
         struct Data;
